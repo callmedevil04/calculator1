@@ -1,0 +1,234 @@
+nav{
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    background:linear-gradient( black,var(--primary-color));
+    box-shadow: 6px 7px 8px var(--primary-text-color);
+    
+    
+    
+    
+    
+}
+
+#dropdown-section
+{
+    display: flex;
+    width:60%;
+    
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+#themes
+{
+    width: 20%;
+    height: 20%;
+    margin:5%;
+    border:none;
+    border-radius: 4px;
+    color:var(--primary-text-color);
+    
+    font-weight: 900;
+
+    background-color: var(--primary-number-button-color);
+    box-shadow: inset 7px 10px 30px white;
+}
+
+#themes:hover
+{
+   
+    opacity: 0.3;
+    cursor: pointer;
+}
+#themes:active
+{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#dropdown-tabs
+{
+    
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+ 
+    height: 60%;
+    margin-left:3%;
+    display: none;
+    transition: display ,1s,ease;
+    
+}
+
+
+
+#dropdown-tabs button{
+    display:flex;
+   background-color: transparent;
+   
+    width:10%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    border-radius:50%;
+    opacity: 0.8;
+   
+    
+}
+@media(max-width:584px)
+{
+   
+    #dropdown-tabs
+    {
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+#dropdown-tabs button:hover
+{
+    width:12%;
+    height: 37%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#dont
+{
+   color: red;
+}
+#green
+{
+    color:green;
+}
+#blue
+{
+    color:blue;
+}
+#light
+{
+    color: white;
+}
+#dark
+{
+    color: black;
+}
+
+
+
+.green-theme
+{
+    --primary-color: rgb(27, 49, 27);  /* Dark green, similar to the primary red */
+--secondary-color: rgb(18, 80, 18);  /* Slightly lighter green, matching secondary red */
+
+--primary-text-color: black;  /* Keep the primary text color as black for readability */
+--secondary-text-color: rgb(210, 239, 210);  /* Light greenish tint for secondary text */
+
+--primary-gradient-color: rgb(37, 109, 37);  /* Dark green gradient tone */
+--secondary-gradient-color: rgb(3, 24, 3);   /* Very dark green, almost black, for the secondary gradient */
+
+--primary-screen-color: #1d8921;  /* A strong green screen color, similar to the red one */
+
+--secondary-screen-color: #a9fda9;  /* Light greenish background for the secondary screen */
+
+--primary-number-button-color: rgb(4, 192, 4);  /* Bright green for number buttons */
+--secondary-number-button-color: rgb(1, 107, 1);  /* Darker green for secondary number buttons */
+
+--primary-operation-button-color: rgb(86, 249, 86);  /* Light green with a slight tint for operation buttons */
+--secondary-operation-button-color: rgb(1, 86, 1);   /* Darker green for secondary operation buttons */
+
+}
+
+.blue-theme
+{
+    --primary-color: rgb(27, 27, 49);  /* Dark blue, similar to the primary red */
+    --secondary-color: rgb(18, 18, 80);  /* Slightly lighter blue, matching secondary red */
+    
+    --primary-text-color: black;  /* Keep the primary text color as black for readability */
+    --secondary-text-color: rgb(210, 210, 239);  /* Light bluish tint for secondary text */
+    
+    --primary-gradient-color: rgb(37, 37, 109);  /* Dark blue gradient tone */
+    --secondary-gradient-color: rgb(3, 3, 24);   /* Very dark blue, almost black, for the secondary gradient */
+    
+    --primary-screen-color: #105689;  /* A strong blue screen color, similar to the red and green ones */
+    
+    --secondary-screen-color: #a9d1f2;  /* Light blueish background for the secondary screen */
+    
+    --primary-number-button-color: rgb(4, 4, 192);  /* Bright blue for number buttons */
+    --secondary-number-button-color: rgb(1, 1, 107);  /* Darker blue for secondary number buttons */
+    
+    --primary-operation-button-color: rgb(86, 86, 249);  /* Light blue with a slight tint for operation buttons */
+    --secondary-operation-button-color: rgb(1, 1, 86);   /* Darker blue for secondary operation buttons */
+    
+}
+
+.light-theme
+{
+    --primary-color: rgb(200, 230, 255);  /* Light blue/soft pastel color */
+    --secondary-color: rgb(150, 190, 255);  /* Lighter blue for secondary elements */
+    
+    --primary-text-color: black;  /* Black for primary text for readability */
+    --secondary-text-color: rgb(60, 60, 60);  /* Dark gray for secondary text for a soft contrast */
+    
+    --primary-gradient-color: rgb(100, 180, 255);  /* Soft light blue gradient */
+    --secondary-gradient-color: rgb(200, 220, 255);  /* Very light blue for subtle gradient */
+    
+    --primary-screen-color: #d0eaff;  /* Light, soft blue for the screen */
+    --secondary-screen-color: #f0f8ff;  /* Very light background blue */
+    
+    --primary-number-button-color: rgb(100, 140, 255);  /* Soft blue for number buttons */
+    --secondary-number-button-color: rgb(180, 200, 255);  /* Lighter blue for secondary buttons */
+    
+    --primary-operation-button-color: rgb(120, 180, 255);  /* Light operation button color */
+    --secondary-operation-button-color: rgb(180, 220, 255);  /* Very light for secondary operation buttons */
+    
+}
+.dark-theme
+{
+    --primary-color: rgb(40, 40, 60);  /* Darker blue tone for primary background */
+    --secondary-color: rgb(30, 30, 45);  /* Slightly lighter dark blue for secondary elements */
+    
+    --primary-text-color: white;  /* White text for high contrast on dark background */
+    --secondary-text-color: rgb(200, 200, 220);  /* Light gray for secondary text */
+    
+    --primary-gradient-color: rgb(20, 20, 40);  /* Deep dark blue gradient */
+    --secondary-gradient-color: rgb(60, 60, 80);  /* Darker gradient for subtle shading */
+    
+    --primary-screen-color: #0f243d;  /* Dark, rich blue for screen */
+    --secondary-screen-color: #243e59;  /* Slightly lighter dark blue for the secondary screen */
+    
+    --primary-number-button-color: rgb(70, 100, 255);  /* Bright blue for number buttons */
+    --secondary-number-button-color: rgb(50, 80, 150);  /* Darker blue for secondary number buttons */
+    
+    --primary-operation-button-color: rgb(80, 120, 200);  /* Soft blue for operation buttons */
+    --secondary-operation-button-color: rgb(60, 90, 150);  /* Darker blue for secondary operation buttons */
+    
+}
+
+.dont-theme
+{
+    --primary-color: rgb(255, 105, 180);  /* Hot pink, iconic Barbie color */
+--secondary-color: rgb(255, 182, 193);  /* Light pink, softer secondary elements */
+
+--primary-text-color: white;  /* White text for high contrast on pink background */
+--secondary-text-color: rgb(100, 100, 100);  /* Dark gray for secondary text to soften the contrast */
+
+--primary-gradient-color: rgb(255, 20, 147);  /* Deep pink gradient */
+--secondary-gradient-color: rgb(255, 105, 180);  /* Lighter pink gradient to match the primary color */
+
+--primary-screen-color: #f5c6cb;  /* Soft pink for the screen background */
+--secondary-screen-color: #ffe0e9;  /* Very light pink for secondary screen areas */
+
+--primary-number-button-color: rgb(255, 60, 130);  /* Bright pink for number buttons */
+--secondary-number-button-color: rgb(255, 140, 170);  /* Light pink for secondary number buttons */
+
+--primary-operation-button-color: rgb(255, 99, 140);  /* Bold pink for operation buttons */
+--secondary-operation-button-color: rgb(255, 182, 193);  /* Lighter pink for secondary operation buttons */
+
+}
+
+

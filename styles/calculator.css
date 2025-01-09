@@ -1,0 +1,198 @@
+*
+{
+    margin :0px;
+   padding: 0px;
+}
+
+
+:root{
+    --primary-color:rgb(49, 27, 27) ;
+    --secondary-color:rgb(80, 18, 18);
+
+    --primary-text-color:black;
+    --secondary-text-color:rgb(239, 210, 210);
+
+    --primary-gradient-color:rgb(109, 37, 37);
+    --secondary-gradient-color:rgb(24, 3, 3);
+
+    --primary-screen-color:#892105;
+    --secondary-screen-color:#fda9a9;
+
+    --primary-number-button-color:rgb(192, 4, 4);
+    --secondary-number-button-color:rgb(107, 1, 1);
+
+    --primary-operation-button-color:rgb(249, 86, 86);
+    --secondary-operation-button-color:rgb(86, 1, 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+
+    background:linear-gradient( 45deg, var(--primary-gradient-color),var(--secondary-gradient-color));
+}
+
+
+
+
+
+
+.container
+{
+    margin: 30px 0;
+    height: 90vh;
+    width: 50%;
+    background-color: var(--primary-color);
+    padding: 2px;
+    max-width: 712px;
+    border: 10px groove var(--secondary-color);
+    border-radius: 30px;
+    
+}
+
+@media(max-width:594px)
+{
+    .container{
+        width:80%;
+        
+    }
+}
+
+.type
+{
+    
+    width: 95%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 40px;
+}
+
+#type
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+
+}
+.answer-tab
+{
+    font-weight: 800;
+    font-size: 30px;
+    width: 95%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.screen
+{
+    width: 95%;
+    height: 30%;
+    background: linear-gradient(135deg,var(--primary-screen-color),var(--secondary-screen-color) );
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+
+.upcoming
+{
+    width: 100%;
+    height: 10%;
+    background-color:var(--primary-color);
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%;
+    background-color:var(--primary-color);;
+    height: 55%;
+    width: 95%;
+    
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn_number,.btn_operation
+{
+    width: 100%;
+    height:  100%;
+    border-radius: 25%;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--primary-text-color);
+   
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    overflow: hidden;
+
+    
+ -webkit-tap-highlight-color: transparent; /* Removes mobile tap highlight */
+    
+      
+
+}
+
+
+
+
+
+.btn_number
+{
+    background:radial-gradient(circle,var(--primary-number-button-color),var(--secondary-number-button-color));
+}
+
+.btn_operation
+{
+    background: radial-gradient(circle,var(--primary-operation-button-color),var(--secondary-operation-button-color));
+}
+
+.btn_number:hover,.btn_operation:hover
+{
+   /* background-color:rgb(192, 4, 4); */
+   border:1px solid var(--secondary-text-color);
+   color: var(--secondary-text-color);
+}
+
+
+
+.cursor {
+    display: inline-block;
+    width: 2px; /* Cursor width */
+    height: 40px; /* Cursor height */
+    background-color: black; /* Cursor color */
+    animation: blink 0.5s step-end infinite; /* Blinking effect */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
